@@ -21,9 +21,3 @@ services:
             - ./script:/docker-entrypoint-initdb.d
         networks:
             - default
-    phpmyadmin:
-        image: phpmyadmin:latest
-        links: 
-            - db:db
-        ports:
-            - 8000:80
